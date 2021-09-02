@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.test.concepts.ParameterisedTest">
+        <methods>
+          <include name="logIn"/>
+        </methods>
+      </class> <!-- com.test.concepts.ParameterisedTest -->
+      <class name="com.testng.retryanalyser.SampleTest">
+        <methods>
+          <include name="homepageValidation"/>
+          <include name="usernameValidation"/>
+        </methods>
+      </class> <!-- com.testng.retryanalyser.SampleTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
