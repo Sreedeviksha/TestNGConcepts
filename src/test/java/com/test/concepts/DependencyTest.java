@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 public class DependencyTest {
 
-	@Test(dependsOnMethods="searchWatch")
+	@Test(dependsOnMethods = "searchWatch")
 	private void searchLaptop() {
 		System.out.println("Search Laptop");
 	}
 
-	@Test(dependsOnMethods="searchLaptop")
+	@Test(dependsOnMethods = "searchLaptop")
 	private void searchMobile() {
 		System.out.println("Search Mobile");
 	}
@@ -18,5 +18,6 @@ public class DependencyTest {
 	private void searchWatch() {
 		System.out.println("Search watch");
 	}
+
 	
 }

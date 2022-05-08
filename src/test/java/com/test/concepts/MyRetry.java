@@ -5,18 +5,20 @@ import org.testng.ITestResult;
 
 public class MyRetry implements IRetryAnalyzer {
 
-	int count = 1;
+	int count = 0;
 	int limit = 4;
-
+	
 	@Override
 	public boolean retry(ITestResult result) {
-
-		if (count < limit) {
-			count++;// count = count +1;
+		if(count<limit) {
+			count++;
 			return true;
 		}
+		
 		return false;
 	}
 
+	
+	
 	
 }

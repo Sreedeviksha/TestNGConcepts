@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.retry.com.Sample">
+      <class name="com.test.concepts.ParallelTest">
         <methods>
-          <include name="usernameValidation"/>
+          <include name="flipKart"/>
         </methods>
-      </class> <!-- com.retry.com.Sample -->
+      </class> <!-- com.test.concepts.ParallelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

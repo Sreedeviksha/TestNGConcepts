@@ -4,12 +4,15 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<groups>
-			<define name="ALL">
+			<define name="All">
 				<include name="Selenium" />
 				<include name="API" />
+				<include name="Git"></include>
+
 			</define>
+
 			<run>
-				<include name="ALL" />
+				<include name="All"></include>
 			</run>
 		</groups>
 		<classes>

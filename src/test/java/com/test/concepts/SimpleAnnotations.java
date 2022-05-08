@@ -3,7 +3,7 @@ package com.test.concepts;
 import org.testng.annotations.*;
 
 public class SimpleAnnotations {
-
+	
 	@BeforeSuite
 	private void setUp() {
 		System.out.println("SetUp");
@@ -25,13 +25,13 @@ public class SimpleAnnotations {
 	}
 
 	@Test
-	private void searchLaptop() {
-		System.out.println("Search Laptop");
+	private void searchMobile() {
+		System.out.println("Search Mobile");
 	}
 
 	@Test
-	private void searchMobile() {
-		System.out.println("Search Mobile");
+	private void searchLaptop() {
+		System.out.println("Search Laptop");
 
 	}
 

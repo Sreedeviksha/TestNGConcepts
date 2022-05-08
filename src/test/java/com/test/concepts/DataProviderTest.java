@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 
 public class DataProviderTest {
 
+	//to execute multiple set of datas for a test case
+	
 	@Test(dataProvider="logInData")
 	private void logIn(String username, String password) {
 		System.out.println("Enter the login details");
@@ -16,14 +18,12 @@ public class DataProviderTest {
 	@DataProvider
 	private Object[][] logInData() {
 		return new Object[][] {
-			{"AAA","111"},
-			{"BBB","222"},
-			{"CCC","333"}
-			
-		};
+			{"AAA","111"},{"BBB","222"},{"CCC","333"}
+			};
+	}
 		
 	}
 	
 	
 
-}
+

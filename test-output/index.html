@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\91917\eclipse-workspace\TConcepts\Listner.xml</span>
+                    <span>C:\Users\91917\eclipse-workspace\TConcepts\parallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,24 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.retry.com.Sample" hash-for-method="usernameValidation">usernameValidation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.concepts.ParallelTest" hash-for-method="flipKart">flipKart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.retry.com.Sample" hash-for-method="usernameValidation">usernameValidation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.concepts.ParallelTest" hash-for-method="amazonTest">amazonTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.retry.com.Sample" hash-for-method="usernameValidation">usernameValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.retry.com.Sample" hash-for-method="usernameValidation">usernameValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,83 +134,78 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.retry.com.Sample</span>
+              <span class="class-name">com.test.concepts.ParallelTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="usernameValidation">
-                  </a> <!-- usernameValidation -->
-                  <span class="method-name">usernameValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a] but found [A]
-	at com.retry.com.Sample.usernameValidation(Sample.java:10)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
+                  <a name="flipKart">
+                  </a> <!-- flipKart -->
+                  <span class="method-name">flipKart</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 800700C1 (&apos;%1 is not a valid Win32 application.&apos;) for URL &apos;http://localhost:18206/&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-FR81P7PN&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: 
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:213)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:150)
+	at com.test.concepts.ParallelTest.flipKart(ParallelTest.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.retry.com.Sample</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.test.concepts.ParallelTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="usernameValidation">
-                  </a> <!-- usernameValidation -->
-                  <span class="method-name">usernameValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a] but found [A]
-	at com.retry.com.Sample.usernameValidation(Sample.java:10)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="usernameValidation">
-                  </a> <!-- usernameValidation -->
-                  <span class="method-name">usernameValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a] but found [A]
-	at com.retry.com.Sample.usernameValidation(Sample.java:10)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="usernameValidation">
-                  </a> <!-- usernameValidation -->
-                  <span class="method-name">usernameValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [a] but found [A]
-	at com.retry.com.Sample.usernameValidation(Sample.java:10)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="amazonTest">
+                  </a> <!-- amazonTest -->
+                  <span class="method-name">amazonTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91917\eclipse-workspace\TConcepts\Listner.xml</span>
+            <span class="header-content">C:\Users\91917\eclipse-workspace\TConcepts\parallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.retry.com.MyTransform&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.retry.com.Sample&quot;/&gt;
+      &lt;class name=&quot;com.test.concepts.ParallelTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -260,28 +245,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'usernameValidation')
-data.setCell(0, 2, 'com.retry.com.Sample')
-data.setCell(0, 3, 23);
+data.setCell(0, 1, 'amazonTest')
+data.setCell(0, 2, 'com.test.concepts.ParallelTest')
+data.setCell(0, 3, 10077);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'usernameValidation')
-data.setCell(1, 2, 'com.retry.com.Sample')
-data.setCell(1, 3, 3);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'usernameValidation')
-data.setCell(2, 2, 'com.retry.com.Sample')
-data.setCell(2, 3, 2);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'usernameValidation')
-data.setCell(3, 2, 'com.retry.com.Sample')
-data.setCell(3, 3, 1);
+data.setCell(1, 1, 'flipKart')
+data.setCell(1, 2, 'com.test.concepts.ParallelTest')
+data.setCell(1, 3, 3017);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 ms</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,24 +284,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.retry.com.Sample</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.concepts.ParallelTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">usernameValidation</span>
+                <span class="method-name">amazonTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">usernameValidation</span>
-                <span class="method-start">35 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">usernameValidation</span>
-                <span class="method-start">43 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">usernameValidation</span>
-                <span class="method-start">49 ms</span>
+                <span class="method-name">flipKart</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

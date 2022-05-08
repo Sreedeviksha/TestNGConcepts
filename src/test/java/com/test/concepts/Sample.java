@@ -11,9 +11,11 @@ public class Sample {
 	}
 	
 	@Test
-	private void logIn() {
-		Assert.assertEquals('B','b');
+	private void userPasswordValidation() {
+		Assert.assertEquals('b','B');
 	}
 	
 	
+	
 }
+  

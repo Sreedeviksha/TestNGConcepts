@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.retry.com.MyTransform"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.retry.com.Sample">
+      <class name="com.test.concepts.ParallelTest">
         <methods>
-          <include name="usernameValidation"/>
+          <include name="flipKart"/>
         </methods>
-      </class> <!-- com.retry.com.Sample -->
+      </class> <!-- com.test.concepts.ParallelTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

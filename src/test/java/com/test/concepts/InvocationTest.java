@@ -3,19 +3,18 @@ package com.test.concepts;
 import org.testng.annotations.Test;
 
 public class InvocationTest {
-	
-	@Test(invocationCount=4)
+
+	@Test(invocationCount = 5)
 	private void searchMobile() {
 		System.out.println("Search Mobile");
 	}
 
-	
-	@Test(invocationCount=2)
+	@Test
 	private void searchLaptop() {
 		System.out.println("search Laptop");
 	}
 
-	@Test
+	@Test(invocationCount = 3)
 	private void searchWatch() {
 		System.out.println("Search watch");
 	}

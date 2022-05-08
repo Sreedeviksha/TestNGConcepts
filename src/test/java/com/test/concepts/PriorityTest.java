@@ -4,29 +4,29 @@ import org.testng.annotations.Test;
 
 public class PriorityTest {
 
-	@Test(priority = 1)
-	private void searchMobile() {
+	@Test(priority = 4)
+	private void searchMobile() {  
 		System.out.println("Search Mobile");
 	}
 
-	@Test(priority = 0,dependsOnMethods="searchMobile")
+	@Test(priority = 3)
 	private void searchLaptop() {
 		System.out.println("search Laptop");
-	/*}
+	}
 
-	@Test(priority = -1)
+	@Test(priority = 3)
 	private void searchFruits() {
 		System.out.println("Search fruits");
 	}
 
-	@Test
+	@Test(priority = 2)
 	private void searchWatch() {
 		System.out.println("Search Watch");
 	}
 
-	@Test(priority = -2)
+	@Test(priority = -1)
 	private void searchTv() {
-		System.out.println("Search Tv");*/
+		System.out.println("Search Tv");
 	}
 
 }

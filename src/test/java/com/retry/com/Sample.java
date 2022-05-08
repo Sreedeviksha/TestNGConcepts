@@ -7,7 +7,7 @@ public class Sample {
 	
 	@Test(retryAnalyzer=MyRetry.class)
 	private void usernameValidation() {
-		Assert.assertEquals("A", 'a');
+		Assert.assertEquals("A", "a");
 	}
 
 }
